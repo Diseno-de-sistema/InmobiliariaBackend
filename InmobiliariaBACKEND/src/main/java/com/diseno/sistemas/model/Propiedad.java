@@ -23,6 +23,11 @@ public class Propiedad {
 	private Boolean   disponibilidad;
 	private String tipo;
 	private Integer cod_propiedad;
+	private String imagen;
+	private Float precio;
+	private String tipo_prop;
+	private String direccion;
+
 	
 	
 	public Propiedad () {
@@ -31,7 +36,7 @@ public class Propiedad {
 	
 	public Propiedad(Long id, String telefono, String ubicacion, Integer cant_ambientes, Integer antiguedad,
 			String amueblado, String serv_adheridos, String multimedia, Boolean disponibilidad, String tipo,
-			Integer cod_propiedad) {
+			Integer cod_propiedad, String imagen,Float precio,String tipo_prop, String direccion) {
 		
 		this.id = id;
 		this.telefono = telefono;
@@ -44,6 +49,15 @@ public class Propiedad {
 		this.disponibilidad = disponibilidad;
 		this.tipo = tipo;
 		this.cod_propiedad = cod_propiedad;
+		this.imagen = imagen;
+		this.precio = precio;
+		this.tipo_prop = tipo_prop;
+		this.direccion = direccion;
+
+		
+
+
+
 	}
 
 
@@ -52,6 +66,12 @@ public class Propiedad {
 	
 	
 	
+
+
+	
+
+	
+
 	public Long getId() {
 		return id;
 	}
@@ -204,12 +224,39 @@ public class Propiedad {
 	}
 
 
+	public String getImagen() {
+		return imagen;
+	}
+
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
+	}
 
 
+	public Float getPrecio() {
+		return precio;
+	}
+
+	public void setPrecio(Float precio) {
+		this.precio = precio;
+	}
+
 	
 	
-	
-	
-	
+	public String getTipo_prop() {
+		return tipo_prop;
+	}
+
+	public void setTipo_prop(String tipo_prop) {
+		this.tipo_prop = tipo_prop;
+	}
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
 	
 }
